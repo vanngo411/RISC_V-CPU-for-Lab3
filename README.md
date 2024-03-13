@@ -20,5 +20,9 @@ Conversely, the hazard detection module serves as a safeguard against potential 
 ## Schematic for LEDs output on Alchitry Au
 ![image](https://github.com/vanngo411/RISC_V-CPU-for-Lab3/blob/main/LEDs_Showing.png)
 
+In the diagram above, we can see that there is a RAM that store 8 overwritten vlaues when logic RegWrite on and it is the main part for the top module connects to Alchitry Au. For each output value that write back to register file, a line is used to send to RAM for LEDs flashing. The signal to allow write-on comes from up counter that count from 0 to 7 and then over flow. To show the value of RAM on LEDs, we use a clock divider to be slow down LEDs changing state for each 4 second. 
+
 ## LEDs output on Alchitry Au
 ![image](https://github.com/vanngo411/RISC_V-CPU-for-Lab3/blob/main/Alchitry_Au.png)
+
+The LEDs show up first four values for 0 because we don't have any data on write back signal. The fifth, sixth and seventh value have 125, 133 and 200. And then turn off again because no input before repeating again.
