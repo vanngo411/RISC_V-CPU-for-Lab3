@@ -29,4 +29,4 @@ The LEDs show up first four values for 0 because we don't have any data on write
 
 ## Notes
 
-File RISC_V.v contains all module needed for top module to run on Alchitry Au.
+File RISCV_TOP.v contains all module needed for top module to run on Alchitry Au.
